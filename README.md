@@ -40,12 +40,33 @@ Output is written to the `out/` directory.
 
 ## GitHub Pages Deployment
 
-1. Push this repo to GitHub.
-2. Enable **GitHub Pages** in repo Settings → Pages → Source: **GitHub Actions**.
-3. The included workflow (`.github/workflows/deploy.yml`) builds and deploys on push to `main` or `master`.
-4. Your site will be available at `https://<username>.github.io/<repo-name>/`.
+**Live URL (after deploy):** [https://qaisrani5657.github.io/ecommerce/](https://qaisrani5657.github.io/ecommerce/)
 
-The workflow sets `NEXT_PUBLIC_BASE_PATH` automatically from the repository name.
+### First-time setup
+
+1. Create a new repository on GitHub:
+   - Go to [github.com/new](https://github.com/new)
+   - Repository name: `ecommerce`
+   - Visibility: Public
+   - Do **not** add README, .gitignore, or license (this project already has them)
+
+2. Push from your machine:
+
+```bash
+cd "d:\Cursor Websites\ecommerce"
+git remote add origin https://github.com/QAISRANI5657/ecommerce.git
+git push -u origin main
+```
+
+(If `origin` already exists, use `git push -u origin main` only.)
+
+3. Enable GitHub Pages:
+   - Open [github.com/QAISRANI5657/ecommerce/settings/pages](https://github.com/QAISRANI5657/ecommerce/settings/pages)
+   - **Build and deployment** → Source: **GitHub Actions**
+
+4. The workflow runs automatically on push. Check progress under **Actions** tab.
+
+The workflow sets `NEXT_PUBLIC_BASE_PATH=/ecommerce` automatically from the repository name.
 
 For local production builds matching GitHub Pages:
 
@@ -71,4 +92,4 @@ src/
 
 ## License
 
-Portfolio showcase project. Product images from [Unsplash](https://unsplash.com).
+Portfolio showcase project. Product illustrations are bundled locally in `public/images/`.
