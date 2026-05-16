@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-label="PulseBand Elite">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#134e4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <rect x="220" y="320" width="360" height="80" rx="40" fill="#1e293b" stroke="#10b981" stroke-width="3"/>
+  <rect x="250" y="340" width="300" height="40" rx="8" fill="#0f172a"/>
+  <circle cx="320" cy="360" r="12" fill="#10b981"/>
+  <path d="M380 360 L420 350 L460 370 L500 355 L540 365" fill="none" stroke="#06b6d4" stroke-width="3" stroke-linecap="round"/>
+</svg>
